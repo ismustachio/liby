@@ -1,7 +1,7 @@
 #include "window.h"
 
 Window *window_init(Window window[static 1], size_t width, size_t height,
-                    const char *name, GLFWwindow *glfwWindow) {
+                    const char *name) {
   glfwInit();
   glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
   glfwWindowHint(GLFW_RESIZABLE, GLFW_TRUE);

@@ -15,7 +15,7 @@ typedef struct {
 } Window;
 
 Window *window_init(Window window[static 1], size_t width, size_t height,
-                    const char *name, GLFWwindow *glfwWindow);
+                    const char *name);
 void window_destroy(Window window[static 1]);
 VkExtent2D getExtent(const Window window[static 1]);
 bool shouldClose(const Window window[static 1]);
