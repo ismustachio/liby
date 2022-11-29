@@ -1,0 +1,5 @@
+include_directories(src)
+set(NAME math)
+file(GLOB_RECURSE SOURCES LIST_DIRECTORIES true src/*.h src/*.c)
+set(SOURCES ${SOURCES})
+add_library(${NAME} STATIC ${SOURCES})
