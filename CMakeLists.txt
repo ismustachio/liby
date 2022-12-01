@@ -16,6 +16,8 @@ add_subdirectory(graphics)
 
 
 add_executable(${PROJECT_NAME} main.c)
+target_link_libraries(${PROJECT_NAME} math)
+target_link_libraries(${PROJECT_NAME} graphics)
 target_include_directories(${PROJECT_NAME} PRIVATE math/src)
 target_include_directories(${PROJECT_NAME} PRIVATE graphics/src)
 file(GLOB_RECURSE GLSL_SOURCE_FILES "shaders/*.frag" "shaders/*.vert")
